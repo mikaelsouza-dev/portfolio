@@ -3,14 +3,17 @@
   "use strict";
 
     // COLOR MODE
-    $('.color-mode').click(function(){
-        $('.color-mode-icon').toggleClass('active')
-        $('body').toggleClass('dark-mode')
-    })
+    document.querySelector('.color-mode').addEventListener('click', function() {
+      document.querySelector('.color-mode-icon').classList.toggle('active');
+      document.querySelector('body').classList.toggle('dark-mode');
+    });
+    
 
     // HEADER
-    $(".navbar").headroom();
-
+    var navbar = document.querySelector(".navbar");
+    var headroom = new Headroom(navbar);
+    headroom.init();
+    
     // PROJECT CAROUSEL
     $('.owl-carousel').owlCarousel({
     	items: 1,
