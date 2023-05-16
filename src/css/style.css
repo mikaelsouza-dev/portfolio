@@ -1,17 +1,50 @@
+/* Importação de fonte do Google Fonts */
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
+
+/* Estilos globais */
+html {
+    scroll-behavior: smooth;
+
+}
 body {
-  font-family: "Maven Pro", sans-serif;
   padding-top: 70px;
 }
+
 * {
   transition: all 0.3s;
   text-decoration: none;
 }
 
+#progressup {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+#progressup-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  color: #001a2e;
+}
+
+/* Estilos para tela cheia */
 .full-screen {
   padding: 8rem 0;
 }
 
+/* Estilos para texto pequeno */
 .small-text {
   color: #5b5b5b;
   font-size: 14px;
@@ -21,28 +54,34 @@ body {
   letter-spacing: 0.2px;
 }
 
+/* Estilos para lista não ordenada */
 ul {
   margin: 0;
   padding: 0;
 }
+
 ul li {
   list-style: none;
 }
 
+/* Estilos para links */
 a {
   font-weight: normal;
   text-decoration: none !important;
   transition: all 0.4s ease;
   color: white;
 }
+
 a:hover {
   color: #a200ff !important;
 }
 
+/* Estilos para logotipo da navbar */
 .navbar-brand .uil {
   font-size: 40px;
 }
 
+/* Estilos para parágrafos */
 p {
   font-size: 15px;
   font-weight: 300;
@@ -50,7 +89,13 @@ p {
   color: #5b5b5b;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* Estilos para títulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
   letter-spacing: -1px;
 }
@@ -72,12 +117,12 @@ h3 {
 }
 
 h3,
-b, strong {
+b,
+strong {
   font-weight: bold;
 }
 
-
-
+/* Estilos para botão personalizado */
 .custom-btn {
   background: #eee;
   color: #5b5b5b;
@@ -89,18 +134,22 @@ b, strong {
   overflow: hidden;
   transition: all 0.4s ease;
 }
+
 .custom-btn:hover {
   color: #a200ff;
 }
+
 .custom-btn.custom-btn-bg {
   background: #474559;
   color: #ffffff;
 }
+
 .custom-btn.custom-btn-bg:hover {
   background: #a200ff;
   color: #ffffff !important;
 }
 
+/* Estilos para elementos animados */
 .animated {
   position: relative;
 }
@@ -115,9 +164,6 @@ b, strong {
 
 .animated-item {
   color: #a200ff;
-}
-
-.animated-item {
   font-size: 38px;
   line-height: inherit;
   display: block;
@@ -129,11 +175,110 @@ b, strong {
   left: 0;
   animation: BottomTotop 6s linear infinite 0s;
 }
+
+.animated-item:nth-child(2n+2) {
+  animation-delay: 2s;
+}
+
 .animated-item:nth-child(2n+2) {
   animation-delay: 2s;
 }
 .animated-item:nth-child(3n+3) {
   animation-delay: 4s;
+}
+
+.skill {
+  margin-bottom: 35px;
+  position: relative;
+
+}
+.skill > p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1716;
+  margin: 0;
+}
+.skill:before{
+  width: 100%;
+  height: 5px;
+  content: "";
+  display: block;
+  position: absolute;
+  background: #959595;
+  bottom: 0;
+}
+.skill-bar {
+  width: 100%;
+  height: 5px;
+  background:#a200ff;
+  display: block;
+  position: relative;
+}
+
+
+.skill-bar span{
+  position: absolute;
+  border-top: 5px solid #a200ff;
+  top: -30px;
+  padding: 0;
+  font-size: 18px;
+  padding: 3px 0;
+  font-weight: 500;
+}
+.skill-bar {
+  position: relative;
+
+}
+
+.skill1 .skill-count1 {
+  right: 0;
+}
+
+/* SKILL 1 */
+.skill1{
+  width: 80%;
+}
+/* SKILL 2 */
+.skill2{
+  width: 75%;
+}
+
+.skill2 .skill-count2 {
+  right: 0;
+}
+/* SKILL 3 */
+.skill3{
+  width: 68%;
+}
+.skill3 .skill-count3 {
+  right: 0;
+}
+
+/* SKILL 4 */
+.skill4{
+  width: 60%
+}
+
+.skill4 .skill-count4 {
+  right: 0;
+}
+
+/* SKILL 5 */
+.skill5{
+  width: 65%;
+}
+
+.skill5 .skill-count5 {
+  right: 0;
+}
+
+/* SKILL 6 */
+.skill6{
+  width: 40%
+}
+
+.skill6 .skill-count6 {
+  right: 0;
 }
 
 @keyframes BottomTotop {
@@ -259,21 +404,71 @@ b, strong {
 }
 
 
-.about-text .social {
+.about-text .social, .social {
   color: black;
   font-size: 30px;
 }
 
-.about-text .social:hover {
+.about-text .social:hover, .social:hover {
   color: #a200ff;
   font-size: 30px;
 }
 
+.img-header:hover {
+  cursor: pointer;
+  -webkit-animation:zoom-in-out 5s ease-in 0s infinite normal;
+  -moz-animation:zoom-in-out 5s ease-in 0s infinite normal;
+  -ms-animation:zoom-in-out 5s ease-in 0s infinite normal;
+  animation:zoom-in-out 5s ease-in 0s infinite normal;
+}
+@-webkit-keyframes zoom-in-out {
+  0%{ -webkit-transform: scale(1); transform: scale(1); }
+  50%{ -webkit-transform: scale(1.1); transform: scale(1.1); }
+  100%{ -webkit-transform: scale(1); transform: scale(1); }
+  }
+  
+  @keyframes zoom-in-out {
+  0%{ -ms-transform: scale(1); transform: scale(1); }
+  50%{ -ms-transform: scale(1.1); transform: scale(1.1); }
+  100%{ -ms-transform: scale(1); transform: scale(1); }
+  }
 
-.copyright-text {
-  font-size: 16px;
-  font-weight: normal;
-  display: block;
+
+.emoji:hover {
+  cursor: pointer;
+  animation: waving-hand 2.5s infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes waving-hand {
+  0% {
+    transform: rotate(0deg);
+
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4.0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+    font-size: 4rem;
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    font-size: 2.8rem;
+  }
 }
 
 .color-mode {
@@ -331,7 +526,8 @@ b, strong {
 .dark-mode .timeline-info p,
 .dark-mode .about-text p,
 .dark-mode .progress-bar .progress-value,
-.dark-mode .color-mode {
+.dark-mode .color-mode,
+.dark-mode .skill p, .dark-mode .skill span{
   color: #ffffff;
 }
 .dark-mode .owl-carousel .owl-nav button.owl-next,
@@ -543,7 +739,7 @@ b, strong {
   padding: 0;
   display: block;
   position: absolute;
-  top: 50%;
+  top: 100%;
   transform: translate(0, -50%);
   font-family: 'unicons';
   font-size: 100px;
@@ -621,7 +817,6 @@ b, strong {
 
 #contact ul li a {
   text-decoration: none;
-  display:absolute;
   display:block;
   width:210px;
   height:80px;
@@ -748,6 +943,7 @@ b, strong {
     display: flex; 
     flex-direction: column; 
     gap: 50px;
+    margin-top: 100px;
   }
 }
 @media (max-width: 580px) {
