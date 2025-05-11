@@ -18,6 +18,48 @@
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="src/css/style.css">
     
+    <style>
+      .project-info img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      [data-theme="dark"] .project-info p {
+        color: #e0e0e0;
+      }
+
+      .animated-text {
+        display: flex;
+        align-items: center;
+      }
+
+      .animated-info {
+        margin-left: 10px;
+        height: 40px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .animated-item {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        opacity: 0;
+        z-index: 1;
+        transition: opacity 0.5s;
+        text-align: left;
+      }
+
+      .animated-item.active {
+        opacity: 1;
+        z-index: 2;
+      }
+    </style>
   </head>
   <body>
 
@@ -73,11 +115,12 @@
                     <div class="about-text">
                         <h1 class="animated animated-text">
                             <span class="mr-2"><span class="emoji">👋</span> Hello, I'm</span>
-                                <div class="animated-info">
-                                    <span class="animated-item">Mikael</span>
-                                    <span class="animated-item">Front-End Dev</span>
-                                    <span class="animated-item">Web Dev</span>
-                                </div>
+                            <div class="animated-info">
+                                <span class="animated-item">Mikael</span>
+                                <span class="animated-item">Full Stack Dev</span>
+                                <span class="animated-item">Game Dev</span>
+                                <span class="animated-item">Web Dev</span>
+                            </div>
                         </h1>
 
                         <p>Sou um profissional apaixonado por desenvolvimento web e design de interfaces, buscando sempre inovar e superar desafios. </p>
@@ -88,9 +131,9 @@
                           
                         </div>
                         <br>
-                        <a href="https://github.com/mikaelsouza-dev" target="_blank"><i class="social uil uil-github"></i></a>
+                        <!-- <a href="https://github.com/mikaelsouza-dev" target="_blank"><i class="social uil uil-github"></i></a> -->
 <!--                         <a href="https://www.linkedin.com/in/mikael-souza-657739235/" target="_blank"><i class="social uil uil-linkedin"></i></a> -->
-                        <a href="mailto:mikaelsouza.lmb@gmail.com" target="_blank"><i class="social uil uil-envelope"></i></a>
+                        <!-- <a href="mailto:mikaelsouza.lmb@gmail.com" target="_blank"><i class="social uil uil-envelope"></i></a> -->
                     </div>
                 </div>
 
@@ -120,7 +163,7 @@
                         <div class="item">
                           <div class="project-info">
                             <a href="https://react-fullstack-whatsapp-clone-dihg.vercel.app/" target="_blank"><img src="src/images/project/project-image12.png" class="img-fluid" alt="project image"></a>
-                            <p>Projeto Full Stack - Clone do WhatsApp. Sistema de Login integrado ao Firebase. Este projeto foi feito em ReactJS.</p>
+                            <p class="text-gray-700 dark:text-gray-200">Projeto Full Stack - Clone do WhatsApp. Sistema de Login integrado ao Firebase. Este projeto foi feito em ReactJS.</p>
                             <a href="https://github.com/mikaelsouza-dev/react-fullstack-whatsapp-clone"target="_blank"><i class="social uil uil-github"></i></a>
                             <a href="https://react-fullstack-whatsapp-clone-dihg.vercel.app/"target="_blank"><i class="social uil uil-play"></i></a>
                           </div>
@@ -129,7 +172,7 @@
                         <div class="item">
                           <div class="project-info">
                             <a href="https://frontendmentor-easybank-blond.vercel.app/" target="_blank"><img src="src/images/project/project-image01.png" class="img-fluid" alt="project image"></a>
-                            <p>Desafio da criação de uma Landing Page para um banco fictício feita por Front-End Mentor.</p>
+                            <p class="text-gray-700 dark:text-gray-200">Desafio da criação de uma Landing Page para um banco fictício feita por Front-End Mentor.</p>
                             <a href="https://github.com/mikaelsouza-dev/frontendmentor-easybank"target="_blank"><i class="social uil uil-github"></i></a>
                             <a href="https://frontendmentor-easybank-blond.vercel.app/"target="_blank"><i class="social uil uil-play"></i></a>
                           </div>
@@ -138,7 +181,7 @@
                         <div class="item">
                           <div class="project-info">
                             <a href="https://jg-portfolio.vercel.app/" target="_blank"><img src="src/images/project/project-image02.png" class="img-fluid" alt="project image"></a>
-                            <p>Portfolio Digital feito para um amigo.</p>
+                            <p class="text-gray-700 dark:text-gray-200">Portfolio Digital feito para um amigo.</p>
                             <a href="https://github.com/mikaelsouza-dev/jg-portfolio"target="_blank"><i class="social uil uil-github"></i></a>
                             <a href="https://jg-portfolio.vercel.app/"target="_blank"><i class="social uil uil-play"></i></a>
                           </div>
@@ -147,7 +190,7 @@
                         <div class="item">
                           <div class="project-info">
                             <a href="https://mundoinvertido-tan.vercel.app/" target="_blank"><img src="src/images/project/project-image03.png" class="img-fluid" alt="project image"></a>
-                            <p>Projeto Mundo Invertido, um site temático de Stranger Things feito juntamente com a Semana Front-End da dio.me. Neste projeto foi abordado diversos assuntos que foram essenciais para meu desenvolvimento como dev, como integração ao banco de dados Firebase e Theme Switcher.</p>
+                            <p class="text-gray-700 dark:text-gray-200">Projeto Mundo Invertido, um site temático de Stranger Things feito juntamente com a Semana Front-End da dio.me. Neste projeto foi abordado diversos assuntos que foram essenciais para meu desenvolvimento como dev, como integração ao banco de dados Firebase e Theme Switcher.</p>
                             <a href="https://github.com/mikaelsouza-dev/mundoinvertido"target="_blank"><i class="social uil uil-github"></i></a>
                             <a href="https://mundoinvertido-tan.vercel.app/"target="_blank"><i class="social uil uil-play"></i></a>
                           </div>
@@ -156,7 +199,7 @@
                         <div class="item">
                           <div class="project-info">
                             <a href="https://pokedex-six-black.vercel.app/" target="_blank"><img src="src/images/project/project-image04.png" class="img-fluid" alt="project image"></a>
-                            <p>Pokedex simples, feita juntamente com um tutorial do YouTube. Esse projeto foi fantástico, pois aqui que comecei a aprender sobre requisições usando a PokeAPI.</p>
+                            <p class="text-gray-700 dark:text-gray-200">Pokedex simples, feita juntamente com um tutorial do YouTube. Esse projeto foi fantástico, pois aqui que comecei a aprender sobre requisições usando a PokeAPI.</p>
                             <a href="https://github.com/mikaelsouza-dev/pokedex"target="_blank"><i class="social uil uil-github"></i></a>
                             <a href="https://pokedex-six-black.vercel.app/"target="_blank"><i class="social uil uil-play"></i></a>
                           </div>
@@ -165,7 +208,7 @@
                         <div class="item">
                           <div class="project-info">
                             <a href="https://calculator-app-react-olive.vercel.app/" target="_blank"><img src="src/images/project/project-image05.png" class="img-fluid" alt="project image"></a>
-                            <p>Calculadora feita com ReactJS. Foi um dos meus primeiros projetos em React, feito juntamente a um tutorial do youtube.</p>
+                            <p class="text-gray-700 dark:text-gray-200">Calculadora feita com ReactJS. Foi um dos meus primeiros projetos em React, feito juntamente a um tutorial do youtube.</p>
                             <a href="https://github.com/mikaelsouza-dev/calculator-app-react"target="_blank"><i class="social uil uil-github"></i></a>
                             <a href="https://calculator-app-react-olive.vercel.app/"target="_blank"><i class="social uil uil-play"></i></a>
                           </div>
@@ -174,7 +217,7 @@
                         <div class="item">
                           <div class="project-info">
                             <a href="https://bateria-js-five.vercel.app/" target="_blank"><img src="src/images/project/project-image06.png" class="img-fluid" alt="project image"></a>
-                            <p>Bateria simples feita com HTML, CSS e JavaScript. Foi feita juntamente com o professor Bonieky e o curso B7Web. Esse projeto foi muito importante, pois com ele desenvolvi ainda mais minhas habilidades na manipulação de eventos.</p>
+                            <p class="text-gray-700 dark:text-gray-200">Bateria simples feita com HTML, CSS e JavaScript. Foi feita juntamente com o professor Bonieky e o curso B7Web. Esse projeto foi muito importante, pois com ele desenvolvi ainda mais minhas habilidades na manipulação de eventos.</p>
                             <a href="https://github.com/mikaelsouza-dev/bateria-js"target="_blank"><i class="social uil uil-github"></i></a>
                             <a href="https://bateria-js-five.vercel.app/"target="_blank"><i class="social uil uil-play"></i></a>
                           </div>
@@ -183,7 +226,7 @@
                         <div class="item">
                           <div class="project-info">
                             <a href="https://clima-js-one.vercel.app/" target="_blank"><img src="src/images/project/project-image07.png" class="img-fluid" alt="project image"></a>
-                            <p>O aplicativo Clima permite que os usuários busquem informações sobre o clima de uma cidade específica. Ele consome a API OpenWeatherMap para obter os dados meteorológicos atualizados. O projeto foi desenvolvido juntamente com a B7Web e o professor Bonieky.                            </p>
+                            <p class="text-gray-700 dark:text-gray-200">O aplicativo Clima permite que os usuários busquem informações sobre o clima de uma cidade específica. Ele consome a API OpenWeatherMap para obter os dados meteorológicos atualizados. O projeto foi desenvolvido juntamente com a B7Web e o professor Bonieky.</p>
                             <a href="https://github.com/mikaelsouza-dev/clima-js"target="_blank"><i class="social uil uil-github"></i></a>
                             <a href="https://clima-js-one.vercel.app/"target="_blank"><i class="social uil uil-play"></i></a>
                           </div>
@@ -193,7 +236,7 @@
                         <div class="item">
                           <div class="project-info">
                             <a href="https://calculator-app-react-olive.vercel.app/" target="_blank"><img src="src/images/project/project-image08.png" class="img-fluid" alt="project image"></a>
-                            <p>Este é um projeto de um site de compra de pizza feito em HTML, CSS e JavaScript. Com este site, os usuários podem adicionar pizzas em diferentes tamanhos ao carrinho, com um desconto. O site também é totalmente responsivo. Este projeto foi feito juntamente com o professor Bonieky e o curso B7Web.</p>
+                            <p class="text-gray-700 dark:text-gray-200">Este é um projeto de um site de compra de pizza feito em HTML, CSS e JavaScript. Com este site, os usuários podem adicionar pizzas em diferentes tamanhos ao carrinho, com um desconto. O site também é totalmente responsivo. Este projeto foi feito juntamente com o professor Bonieky e o curso B7Web.</p>
                             <a href="https://github.com/mikaelsouza-dev/compra-pizza"target="_blank"><i class="social uil uil-github"></i></a>
                             <a href="https://compra-pizza-tau.vercel.app/"target="_blank"><i class="social uil uil-play"></i></a>
                           </div>
@@ -202,7 +245,7 @@
                         <div class="item">
                           <div class="project-info">
                             <a href="https://jogodavelha-js-ruddy.vercel.app/" target="_blank"><img src="src/images/project/project-image09.png" class="img-fluid" alt="project image"></a>
-                            <p>Jogo da velha simples feita com HTML, CSS e JavaScript. Este projeto foi feito juntamente com o professor Bonieky e o curso B7Web.</p>
+                            <p class="text-gray-700 dark:text-gray-200">Jogo da velha simples feita com HTML, CSS e JavaScript. Este projeto foi feito juntamente com o professor Bonieky e o curso B7Web.</p>
                             <a href="https://github.com/mikaelsouza-dev/jogodavelha-js"target="_blank"><i class="social uil uil-github"></i></a>
                             <a href="https://jogodavelha-js-ruddy.vercel.app/"target="_blank"><i class="social uil uil-play"></i></a>
                           </div>
@@ -211,7 +254,7 @@
                         <div class="item">
                           <div class="project-info">
                             <a href="https://imc-calculator-app.vercel.app/" target="_blank"><img src="src/images/project/project-image11.png" class="img-fluid" alt="project image"></a>
-                            <p>Calculadora de IMC feita com ReactJS. Esse foi um dos meus primeiros projetos em React, se não o primeiro.</p>
+                            <p class="text-gray-700 dark:text-gray-200">Calculadora de IMC feita com ReactJS. Esse foi um dos meus primeiros projetos em React, se não o primeiro.</p>
                             <a href="https://github.com/mikaelsouza-dev/imc-calculator-app-react"target="_blank"><i class="social uil uil-github"></i></a>
                             <a href="https://imc-calculator-app.vercel.app/"target="_blank"><i class="social uil uil-play"></i></a>
                           </div>
@@ -233,11 +276,31 @@
                     <div class="timeline">
                         <div class="timeline-wrapper">
                              <div class="timeline-yr">
-                                  <span>?</span>
+                                  <span>2023</span>
                              </div>
                              <div class="timeline-info">
-                                  <h3><span>Em busca</span></h3>
-                                  <p>Estou buscando minha primeira experiência como desenvolvedor Front-End. Embora sem experiência formal, estou animado para contribuir para projetos de sucesso e crescer como parte de uma equipe comprometida.</p>
+                                  <h3><span>Emprega+</span></h3>
+                                  <p>Desenvolvimento web com foco em PHP e Laravel, trabalhando em projetos que exigiam soluções robustas e escaláveis.</p>
+                             </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>2024</span>
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Emprega+ e Desenvolvimento Full Stack</span></h3>
+                                  <p>Continuando na Emprega+ com foco em desenvolvimento Full Stack, integrando IA e sistemas complexos. Desenvolvimento do ChatBrainly - um chatbot integrado com IA para auxiliar estudantes e professores, plataformas LMS com sistemas de pagamento e videoaulas, desenvolvimento de sites e jogos como Roblox e Fortnite Unreal Editor (UEFN).</p>
+                             </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>2025</span>
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Desenvolvimento de Jogos</span></h3>
+                                  <p>Foco no desenvolvimento de jogos em plataformas online como Roblox e Fortnite, com a MKMaps. Criando e desenvolvendo minha própria empresa de criação de jogos e aplicativos com a MakeXperience.</p>
                              </div>
                         </div>
                     </div>
@@ -247,37 +310,145 @@
                     <div class="skill">
                       <p>HTML5</p>
                       <div class="skill-bar skill1 wow slideInLeft animated">
-                          <span class="skill-count1">80%</span>
+                          <span class="skill-count1">90%</span>
                       </div>
                   </div>
                   <div class="skill">
                       <p>CSS3</p>
                       <div class="skill-bar skill2 wow slideInLeft animated">
-                           <span class="skill-count2">75%</span>
+                           <span class="skill-count2">85%</span>
                       </div>
                   </div>
                   <div class="skill">
                       <p>JAVASCRIPT</p>
                       <div class="skill-bar skill3 wow slideInLeft animated">
-                          <span class="skill-count3">68%</span>
+                          <span class="skill-count3">78%</span>
                       </div>
                   </div>
                   <div class="skill">
                       <p>BOOTSTRAP</p>
                       <div class="skill-bar skill4 wow slideInLeft animated">
-                          <span class="skill-count4">60%</span>
+                          <span class="skill-count4">70%</span>
                       </div>
                   </div>
                   <div class="skill">
                       <p>TAILWIND</p>
                       <div class="skill-bar skill5 wow slideInLeft animated">
-                          <span class="skill-count5">65%</span>
+                          <span class="skill-count5">75%</span>
                       </div>
                   </div>
                   <div class="skill">
                       <p>REACT</p>
                       <div class="skill-bar skill6 wow slideInLeft animated">
-                          <span class="skill-count6">40%</span>
+                          <span class="skill-count6">50%</span>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <p>NEXT.JS</p>
+                      <div class="skill-bar skill7 wow slideInLeft animated">
+                          <span class="skill-count7">45%</span>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <p>TYPESCRIPT</p>
+                      <div class="skill-bar skill8 wow slideInLeft animated">
+                          <span class="skill-count8">40%</span>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <p>NODE.JS</p>
+                      <div class="skill-bar skill9 wow slideInLeft animated">
+                          <span class="skill-count9">55%</span>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <p>GIT & GITHUB</p>
+                      <div class="skill-bar skill10 wow slideInLeft animated">
+                          <span class="skill-count10">80%</span>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <p>API REST</p>
+                      <div class="skill-bar skill11 wow slideInLeft animated">
+                          <span class="skill-count11">60%</span>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <p>WEBHOOKS</p>
+                      <div class="skill-bar skill12 wow slideInLeft animated">
+                          <span class="skill-count12">50%</span>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <p>VPS</p>
+                      <div class="skill-bar skill13 wow slideInLeft animated">
+                          <span class="skill-count13">45%</span>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <p>NGINX</p>
+                      <div class="skill-bar skill14 wow slideInLeft animated">
+                          <span class="skill-count14">40%</span>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <p>PM2</p>
+                      <div class="skill-bar skill15 wow slideInLeft animated">
+                          <span class="skill-count15">45%</span>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <p>MONGODB</p>
+                      <div class="skill-bar skill16 wow slideInLeft animated">
+                          <span class="skill-count16">50%</span>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <p>POSTGRESQL</p>
+                      <div class="skill-bar skill17 wow slideInLeft animated">
+                          <span class="skill-count17">45%</span>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <p>DOCKER</p>
+                      <div class="skill-bar skill18 wow slideInLeft animated">
+                          <span class="skill-count18">40%</span>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <p>DEBIAN</p>
+                      <div class="skill-bar skill19 wow slideInLeft animated">
+                          <span class="skill-count19">45%</span>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <p>PHP</p>
+                      <div class="skill-bar skill20 wow slideInLeft animated">
+                          <span class="skill-count20">65%</span>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <p>LARAVEL</p>
+                      <div class="skill-bar skill21 wow slideInLeft animated">
+                          <span class="skill-count21">60%</span>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <p>UEFN</p>
+                      <div class="skill-bar skill22 wow slideInLeft animated">
+                          <span class="skill-count22">55%</span>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <p>ROBLOX STUDIO</p>
+                      <div class="skill-bar skill23 wow slideInLeft animated">
+                          <span class="skill-count23">50%</span>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <p>IA & CHATBOTS</p>
+                      <div class="skill-bar skill24 wow slideInLeft animated">
+                          <span class="skill-count24">45%</span>
                       </div>
                   </div>
                 </div>
@@ -419,11 +590,11 @@
 
             <div class="col-lg-8 mx-auto">
               <ul>
-                <li>
+                <!-- <li>
                   <a href="https://www.linkedin.com/in/mikael-souza-657739235/" target="_blank">
                     <span><i class="uil-linkedin" aria-hidden="true"></i> - Linkedin</span>
                   </a>
-                </li>
+                </li> -->
                 <li>
                   <a href="https://github.com/mikaelsouza-dev" target="_blank">
                     <span><i class="uil-github" aria-hidden="true"></i> - Github</span>

@@ -8,6 +8,9 @@
       document.querySelector('body').classList.toggle('dark-mode');
     });
     
+    // Set dark mode as default
+    document.querySelector('.color-mode-icon').classList.add('active');
+    document.querySelector('body').classList.add('dark-mode');
 
     // HEADER
     var navbar = document.querySelector(".navbar");
@@ -63,5 +66,19 @@
   };
   window.onscroll = calcScrollValue;
   window.onload = calcScrollValue;
+
+  // Animated Text
+  const animatedItems = document.querySelectorAll('.animated-item');
+  let currentIndex = 0;
+
+  function animateText() {
+    animatedItems.forEach(item => item.classList.remove('active'));
+    animatedItems[currentIndex].classList.add('active');
+    currentIndex = (currentIndex + 1) % animatedItems.length;
+  }
+
+  // Start animation
+  animateText();
+  setInterval(animateText, 2000);
 
 })(jQuery);
